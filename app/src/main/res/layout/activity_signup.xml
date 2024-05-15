@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:padding="10dp"
+    android:background="@color/background">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/kalorilogo"/>
+    <EditText
+        android:id="@+id/txt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_style_box"
+        android:hint="Kullanıcı Adı"
+        android:padding="15dp"
+        android:layout_below="@+id/logo"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/txt_usermail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_style_box"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:hint="E-Posta"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/txt_username"
+        tools:ignore="InvalidId" />
+    <EditText
+        android:id="@+id/txt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:hint="Parola"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_style_box"
+        android:layout_below="@id/txt_usermail"/>
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_password"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_background"
+        android:text="Kayıt Ol"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Zaten bir hesabın var mı ?"
+        android:layout_below="@id/btn_signup"
+        android:layout_margin="5dp"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giriş Yap"
+        android:background="@drawable/button_background"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/textsignup"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:text="Kalori Hesaplama"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:layout_centerHorizontal="true"
+        android:textColor="#F44336"
+        android:textSize="50sp"
+        android:layout_margin="15dp"/>
+    <TextView
+        android:id="@+id/appname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:text="Kalori Hesaplama"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FDFCFC"
+        android:textSize="50sp"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>
